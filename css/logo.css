@@ -1,0 +1,257 @@
+.befor{
+    content: '';
+    background: #7b1798;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    
+}
+.befor-2{
+    content: '';
+    background: #7b1798;
+    height: 15px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    animation: icon 2s linear infinite;
+    border-radius: 6px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    .navbar{
+        background-image:linear-gradient(to right , #a517ba,#5f1782);
+        padding: 0 !important;
+    }
+    .navbar-brand img{
+        height: 40px;
+        padding-left: 20px;
+    }
+    .navbar-nav li{
+        padding:  0 10px;
+        a{
+            color: #fff !important;
+            font-size: 600;
+            float: right;
+            text-align: left;
+        }
+    }
+    .fa-bars-staggered{
+        color: #fff;
+        font-size: 30px !important;
+    }
+    .navbar-toggler:focus{
+        color: rgba(255, 0, 0, 0);
+    }
+}
+
+/* <!------------------------banner section----------------------------> */
+
+#banner{
+    background-image:linear-gradient(to right , #a517ba,#5f1782);
+    color: #fff;
+    padding-top: 5% ;
+    .homeImg{
+        position: relative;
+        animation: home 3s linear infinite
+    }
+    .bromo-title{
+        margin-top: 100px;
+    }
+    .play-btn{
+        width: 45px;
+        margin: 20px;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        .fa-arrow-right{
+            animation: logo 0.6s linear infinite
+        }
+    }
+    .bootom-img{
+        width: 100%;
+    }
+}
+/******************animations banner*********************/
+@keyframes logo{
+    from{padding-left: 10px;}
+    to{padding-left: 20px; }
+}
+@keyframes home{
+    0% , 100% {
+        top: 0;
+    }
+    50%{
+        top: -50px;
+    }
+}
+
+
+/******************Services section*********************/
+
+#services{
+    padding-top: 60px !important;
+    margin-top: 60px !important;
+    padding-bottom: 60px !important;
+    margin-bottom: 60px !important;
+    .sevices{
+        padding: 20px;
+    }
+    .sevices-img{
+        padding-bottom: 20px;
+        width: 100px;
+    }
+    .title{
+        padding-bottom: 20px;
+    }
+    .btn-primary{
+        padding: 8px 25px;
+        border: none;
+        border-radius: 20px;
+
+        background-image:linear-gradient(to right , #a517ba,#5f1782);
+    }
+}
+
+/* *******************animation services***************************** */
+
+@keyframes icon{
+    0% ,100%{transform: translate(-70px , -50px);}
+    50%{transform: translate(70px ,-50px);}
+}
+
+
+/* ************************about us********************************** */
+
+#about-us{
+    background-color: #f6f6f6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-shadow: 1px 1px 10px #ddd;
+    .about-tilte{
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 8%;
+        padding-left: 50px;
+        float: left;
+    }
+    ul li{
+        margin:10px ;
+        float: left;
+    }
+    .about-us-img{
+        position: relative;
+        animation: about 3s linear infinite
+    }
+}
+
+/* *********************animation about***************************** */
+
+@keyframes about{
+    0% , 100% {
+        top: 0;
+    }
+    50%{
+        top: -50px;
+    }
+}
+
+
+/* **********************tesimonials********************************************** */
+
+#testimonials{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .row{
+        gap: 50px;
+    }
+    .testimonials{
+        border-left: 3px solid #a517ba;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .fa-star{
+            padding-left: 10px;
+            color: gold;
+        }
+        .user-details{
+            display: inline-block;
+            font-size: 12px;
+        }
+        img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+    }
+}
+
+
+/* ***************************scocial media section**************************************** */
+
+#social-medi{
+    background-color: #f6f6f6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-shadow: 1px 1px 10px #ddd;
+    .social-icons img{
+        margin: auto;
+        width: 60px;
+        transition: 0.5s;
+    }
+    .social-icons a:hover img{
+        transform: translateY(-10px);
+    }
+
+}
+
+
+
+/* *************************footer section**************************************************** */
+
+#footer{
+    .footer-img{
+        width: 100%;
+    }
+    border-bottom: 1px solid;
+    color: white;
+    background-image:linear-gradient(to right , #a517ba,#5f1782);
+    img{
+        width: 100px;
+    }
+    .footer-box i{
+        margin-right: 8px;
+        font-size: 25px;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        padding-top: 7px;
+        border-radius:5px;
+        background-image:linear-gradient(to right , #a517ba,#5f1782);
+    }
+    .form-control{
+        width: 150px;
+    }
+    .form-label{
+        color: #ddd;
+    }
+    .form-submit{
+        margin-top: 30px;
+        padding: 10px 30px;
+        background-image:linear-gradient(to right , #a517ba,#5f1782);
+        border: none;
+        color: white;
+    }
+}
